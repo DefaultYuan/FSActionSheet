@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B01BD22C1D0802BE00141311 /* FSActionSheetConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = B01BD22B1D0802BE00141311 /* FSActionSheetConfig.m */; };
-		B01BD23C1D083A7700141311 /* FSActionSheet_cancel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B01BD23A1D083A7700141311 /* FSActionSheet_cancel@2x.png */; };
-		B01BD23D1D083A7700141311 /* FSActionSheet_cancel@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B01BD23B1D083A7700141311 /* FSActionSheet_cancel@3x.png */; };
 		B07895E51CE321870052E6A5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B07895E41CE321870052E6A5 /* main.m */; };
 		B07895E81CE321870052E6A5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B07895E71CE321870052E6A5 /* AppDelegate.m */; };
 		B07895EB1CE321870052E6A5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B07895EA1CE321870052E6A5 /* ViewController.m */; };
@@ -23,8 +21,6 @@
 
 /* Begin PBXFileReference section */
 		B01BD22B1D0802BE00141311 /* FSActionSheetConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSActionSheetConfig.m; sourceTree = "<group>"; };
-		B01BD23A1D083A7700141311 /* FSActionSheet_cancel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FSActionSheet_cancel@2x.png"; sourceTree = "<group>"; };
-		B01BD23B1D083A7700141311 /* FSActionSheet_cancel@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FSActionSheet_cancel@3x.png"; sourceTree = "<group>"; };
 		B07895E01CE321870052E6A5 /* FSActionSheet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FSActionSheet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B07895E41CE321870052E6A5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B07895E61CE321870052E6A5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -58,8 +54,6 @@
 		B01BD22D1D08391200141311 /* FSActionSheetResources */ = {
 			isa = PBXGroup;
 			children = (
-				B01BD23A1D083A7700141311 /* FSActionSheet_cancel@2x.png */,
-				B01BD23B1D083A7700141311 /* FSActionSheet_cancel@3x.png */,
 			);
 			path = FSActionSheetResources;
 			sourceTree = "<group>";
@@ -179,9 +173,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B01BD23C1D083A7700141311 /* FSActionSheet_cancel@2x.png in Resources */,
 				B07895F01CE321870052E6A5 /* Assets.xcassets in Resources */,
-				B01BD23D1D083A7700141311 /* FSActionSheet_cancel@3x.png in Resources */,
 				B07C5FC71D0C5B6500E2B357 /* background_image@2x.jpg in Resources */,
 				B07895EE1CE321870052E6A5 /* Main.storyboard in Resources */,
 			);

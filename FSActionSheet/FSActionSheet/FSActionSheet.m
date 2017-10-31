@@ -204,7 +204,7 @@ static NSString * const kFSActionSheetCellIdentifier = @"kFSActionSheetCellIdent
     
     // 富文本相关配置
     NSRange  attributeRange = NSMakeRange(0, _title.length);
-    UIFont  *titleFont      = [UIFont systemFontOfSize:14];
+    UIFont  *titleFont      = [UIFont systemFontOfSize:16];
     UIColor *titleTextColor = FSActionSheetColorWithString(FSActionSheetTitleColor);
     CGFloat  lineSpacing = FSActionSheetTitleLineSpacing;
     CGFloat  kernSpacing = FSActionSheetTitleKernSpacing;

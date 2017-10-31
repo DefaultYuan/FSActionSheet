@@ -88,6 +88,7 @@
     // 设置图片与标题
     [_titleButton setTitle:item.title forState:UIControlStateNormal];
     [_titleButton setImage:item.image forState:UIControlStateNormal];
+    [_titleButton setTitleColor:FSActionSheetColorWithString(FSActionSheetTextColor) forState:UIControlStateNormal];
 }
 
 - (void)setContentAlignment:(FSContentAlignment)contentAlignment {

@@ -38,6 +38,7 @@ UIKIT_EXTERN CGFloat const FSActionSheetItemContentSpacing; ///< 选项图片和
 // color
 UIKIT_EXTERN NSString * const FSActionSheetTitleColor; ///< 标题颜色, default is #888888
 UIKIT_EXTERN NSString * const FSActionSheetBackColor; ///< 背景颜色, default is #E8E8ED
+UIKIT_EXTERN NSString * const FSActionSheetTextColor; ///< 字体颜色, default is #454C57
 UIKIT_EXTERN NSString * const FSActionSheetRowNormalColor; ///< 单元格背景颜色, default is #FBFBFE
 UIKIT_EXTERN NSString * const FSActionSheetRowHighlightedColor; ///< 选中高亮颜色, default is #F1F1F5
 UIKIT_EXTERN NSString * const FSActionSheetRowTopLineColor; ///< 单元格顶部线条颜色, default is #D7D7D8
