@@ -78,8 +78,8 @@
             tintColor = FSActionSheetColorWithString(FSActionSheetItemHighlightedColor);
         }
     }
-    _titleButton.tintColor = tintColor;
-    
+//    _titleButton.tintColor = tintColor;
+
     // 调整图片与标题的间距
     _titleButton.imageEdgeInsets = UIEdgeInsetsMake(0, _item.image?-FSActionSheetItemContentSpacing/2:0,
                                                     _item.image?1:0, _item.image?FSActionSheetItemContentSpacing/2:0);
