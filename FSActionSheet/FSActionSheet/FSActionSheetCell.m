@@ -20,7 +20,7 @@
 
 - (void)setHighlighted:(BOOL)highlighted animated:(BOOL)animated {
     [super setHighlighted:highlighted animated:animated];
-    
+
     if (highlighted) {
         self.contentView.backgroundColor = FSActionSheetColorWithString(FSActionSheetRowHighlightedColor);
     } else {
@@ -32,27 +32,27 @@
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     if (!(self = [super initWithStyle:style reuseIdentifier:reuseIdentifier])) return nil;
-    
+
     self.backgroundColor = FSActionSheetColorWithString(FSActionSheetRowNormalColor);
     self.contentView.backgroundColor = self.backgroundColor;
     self.selectionStyle = UITableViewCellSelectionStyleNone;
     _contentAlignment = FSContentAlignmentCenter;
-    
+
     [self setupSubviews];
-    
+
     return self;
 }
 
 - (void)setupSubviews {
-    _titleButton = [UIButton buttonWithType:UIButtonTypeSystem];
-    _titleButton.tintColor = FSActionSheetColorWithString(FSActionSheetItemNormalColor);
+    _titleButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    //    _titleButton.tintColor = FSActionSheetColorWithString(FSActionSheetItemNormalColor);
     _titleButton.titleLabel.font = [UIFont systemFontOfSize:FSActionSheetItemTitleFontSize];
     _titleButton.userInteractionEnabled = NO;
     _titleButton.translatesAutoresizingMaskIntoConstraints = NO;
     [self.contentView addSubview:_titleButton];
     [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[_titleButton]|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_titleButton)]];
     [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[_titleButton]|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_titleButton)]];
-    
+
     // 顶部线条
     UIView *topLine = [[UIView alloc] init];
     topLine.backgroundColor = FSActionSheetColorWithString(FSActionSheetRowTopLineColor);
@@ -66,7 +66,7 @@
 
 - (void)setItem:(FSActionSheetItem *)item {
     _item = item;
-    
+
     // 前景色设置, 如果有自定义前景色则使用自定义的前景色, 否则使用预配置的颜色值.
     UIColor *tintColor;
     if (item.tintColor) {
@@ -78,7 +78,7 @@
             tintColor = FSActionSheetColorWithString(FSActionSheetItemHighlightedColor);
         }
     }
-//    _titleButton.tintColor = tintColor;
+    //    _titleButton.tintColor = tintColor;
 
     // 调整图片与标题的间距
     _titleButton.imageEdgeInsets = UIEdgeInsetsMake(0, _item.image?-FSActionSheetItemContentSpacing/2:0,
@@ -93,7 +93,7 @@
 
 - (void)setContentAlignment:(FSContentAlignment)contentAlignment {
     if (_contentAlignment == contentAlignment) return;
-    
+
     _contentAlignment = contentAlignment;
     // 更新button的图片和标题Edge
     [self updateButtonContentEdge];
